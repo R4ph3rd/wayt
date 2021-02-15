@@ -51,46 +51,46 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksData = [
   {
-    title: 'Docs',
+    title: 'Théo le bg',
     caption: 'quasar.dev',
     icon: 'school',
-    link: 'https://quasar.dev'
+    link: 'https://theogeiller.com'
   },
   {
-    title: 'Github',
+    title: 'Théo le bg',
     caption: 'github.com/quasarframework',
     icon: 'code',
-    link: 'https://github.com/quasarframework'
+    link: 'https://theogeiller.com'
   },
   {
-    title: 'Discord Chat Channel',
+    title: 'Théo le bg',
     caption: 'chat.quasar.dev',
     icon: 'chat',
-    link: 'https://chat.quasar.dev'
+    link: 'https://theogeiller.com'
   },
   {
-    title: 'Forum',
+    title: 'Théo le bg',
     caption: 'forum.quasar.dev',
     icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
+    link: 'https://theogeiller.com'
   },
   {
-    title: 'Twitter',
+    title: 'Théo le bg',
     caption: '@quasarframework',
     icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
+    link: 'https://theogeiller.com'
   },
   {
-    title: 'Facebook',
+    title: 'Théo le bg',
     caption: '@QuasarFramework',
     icon: 'public',
-    link: 'https://facebook.quasar.dev'
+    link: 'https://theogeiller.com'
   },
   {
-    title: 'Quasar Awesome',
+    title: 'Théo le bg',
     caption: 'Community Quasar projects',
     icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
+    link: 'https://theogeiller.com'
   }
 ]
 
