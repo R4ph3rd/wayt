@@ -16,10 +16,11 @@
             transition-show="slide-up"
             transition-hide="slide-down"
             >
-            <q-btn round color="grey" icon="close" v-close-popup>
+            <q-card class="bg-primary text-white flex content-end">
+
+                <q-btn round color="grey" icon="close" v-close-popup>
                     <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
                 </q-btn>
-            <q-card class="bg-primary text-white flex content-end">
 
                 <q-card-section>
                     <div class="text-h5">{{currentRecord.title}}</div>
