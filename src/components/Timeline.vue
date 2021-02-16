@@ -110,7 +110,7 @@ export default {
                 cancel: {
                 label: 'Cancel',
                 push: true,
-                color: 'gre'
+                color: 'secondary'
                 },
                 persistent: true
             }).onOk(() => {
@@ -131,8 +131,7 @@ export default {
 
 <style lang="scss" scoped>
 ul{
-    height:calc(100vh - 80px);
-    margin-bottom:16vh;
+    height: calc(100vh - 80px - 16vh);
     overflow-y: scroll;
 
     -ms-overflow-style: none;  /* IE and Edge */

@@ -20,6 +20,8 @@ export default {
 
 <style lang="scss" scoped>
 .dashboard{
+    // padding-bottom:16vh;
+
     .timeline{
       $snapshotSize:27vw;
       margin-left:calc(50% - (#{$snapshotSize} /2));  

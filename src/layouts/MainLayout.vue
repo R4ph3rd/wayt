@@ -29,6 +29,7 @@ export default {
 }
 
 .q-footer{
+  position:relative;
   height:16vh;
 
   /* & .q-btn{
