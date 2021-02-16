@@ -10,11 +10,11 @@
     position: absolute;
     top:0;
     left:0;
-    height:100%;
+    height:84%;
 
     .pin{
         position: absolute;
-        bottom:12px;
+        bottom:20px;
         left:0;
         display:block;
         width:max-content;

@@ -9,6 +9,8 @@
             @click.native="openRecord(card)"
         ></record-card>
 
+        <span class="spaceY"></span>
+
             <q-dialog
             v-model="dialog"
             persistent
@@ -131,7 +133,7 @@ export default {
 
 <style lang="scss" scoped>
 ul{
-    height: calc(100vh - 80px - 16vh);
+    height: calc(100vh - 80px);
     overflow-y: scroll;
 
     -ms-overflow-style: none;  /* IE and Edge */
@@ -139,6 +141,12 @@ ul{
 
     &::-webkit-scrollbar {
         display: none;
+    }
+
+    .spaceY{
+        display:block;
+        width:100%;
+        height:16vh;
     }
 
     li {

@@ -23,13 +23,12 @@ export default {
 
 <style lang="scss" scoped>
 .q-header, .q-footer{
-  background: rgb(255,255,255, .7);
+  background: $linear-hidding;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 
 .q-footer{
-  position:relative;
   height:16vh;
 
   /* & .q-btn{
