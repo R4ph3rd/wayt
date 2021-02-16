@@ -11,7 +11,7 @@ const routes = [
     path: '/view',
     component: () => import('layouts/ViewLayout.vue'),
     children: [
-      { path: '/?video_id', component: () => import('pages/View.vue') }
+      { path: 'video_id', component: () => import('pages/View.vue') }
     ]
   },
 

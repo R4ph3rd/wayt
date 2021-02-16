@@ -8,7 +8,6 @@
 export default {
   name: 'PageIndex',
   components:{
-    'v-slider': Slider
   }
 }
 </script>
