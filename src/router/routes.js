@@ -8,8 +8,11 @@ const routes = [
     ]
   },
   {
-    path: 'view',
-    component: () => import('pages/View.vue')
+    path: '/view',
+    component: () => import('layouts/ViewLayout.vue'),
+    children: [
+      { path: '/?video_id', component: () => import('pages/View.vue') }
+    ]
   },
 
   // Always leave this as last one,
