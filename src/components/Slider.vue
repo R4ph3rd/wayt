@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="slider">
 
         <div class="pin">Today</div>
     </div>
@@ -8,6 +8,7 @@
 <style lang="scss" scope>
 .pin{
     display:block;
+    width:max-content;
     background-color: $primary;
     padding: 8px 20px;
     border-radius:0 8px 8px 0;

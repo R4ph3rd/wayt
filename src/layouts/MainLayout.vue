@@ -35,4 +35,9 @@ export default {
     display:block;
   } */
 }
+
+.q-layout{
+  padding-left:15px;
+  padding-right:15px;
+}
 </style>
