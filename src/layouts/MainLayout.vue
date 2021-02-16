@@ -19,17 +19,20 @@
             transition-show="slide-up"
             transition-hide="slide-down"
             >
-            <img :src="imgSrc" alt="">
 
-            <q-btn color="primary" label="Get Picture" @click="captureImage" />
+            <div class="camera">
+              <img :src="imgSrc" alt="">
+
+              <q-btn round color="white" text-color="black" size="xl" icon="stop" @click="captureImage" v-close-popup/>
+            </div>
       </q-dialog>
 
   </q-layout>
 </template>
 
 <script>
-import { Plugins, CameraResultType } from '@capacitor/core'
-const { Camera } = Plugins;
+// import { Plugins, CameraResultType } from '@capacitor/core'
+// const { Camera } = Plugins;
 
 export default {
   name: 'MainLayout',
@@ -130,5 +133,18 @@ export default {
 
 .q-page-container{
   padding-bottom:0 !important;
+}
+
+.camera{
+  width:100%;
+  height:100%;
+
+  background: black;
+
+  button{
+    position:fixed;
+    bottom:50px;
+    left: calc(50% - 24px);
+  }
 }
 </style>
