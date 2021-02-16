@@ -51,25 +51,25 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksData = [
   {
-    title: 'Théo le bg',
+    title: 'Docs',
     caption: 'quasar.dev',
     icon: 'school',
     link: 'https://theogeiller.com'
   },
   {
-    title: 'Théo le bg',
+    title: 'Github',
     caption: 'github.com/quasarframework',
     icon: 'code',
     link: 'https://theogeiller.com'
   },
   {
-    title: 'Théo le bg',
+    title: 'Discord Chat Channel',
     caption: 'chat.quasar.dev',
     icon: 'chat',
     link: 'https://theogeiller.com'
   },
   {
-    title: 'Théo le bg',
+    title: 'Forum',
     caption: 'forum.quasar.dev',
     icon: 'record_voice_over',
     link: 'https://theogeiller.com'
