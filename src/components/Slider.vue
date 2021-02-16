@@ -10,7 +10,7 @@
     position: absolute;
     top:0;
     left:0;
-    height:84%;
+    height: calc(100% - #{$footerHeight});
 
     .pin{
         position: absolute;
@@ -18,7 +18,7 @@
         left:0;
         display:block;
         width:max-content;
-        transform: translateY(-15px);
+        transform: translateX(-15px);
 
         background-color: $primary;
         padding: 8px 20px;

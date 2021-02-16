@@ -20,11 +20,12 @@ export default {
 
 <style lang="scss" scoped>
 .dashboard{
-    // padding-bottom:16vh;
+    // padding-bottom:$footerHeight;
 
     .timeline{
       $snapshotSize:27vw;
-      margin-left:calc(50% - (#{$snapshotSize} /2));  
+      margin-left:calc(50% - (#{$snapshotSize} /2)); 
+      padding-top:20px; 
     }
 }
   

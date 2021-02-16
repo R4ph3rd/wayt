@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated class="flex justify-center">
+    <q-header class="flex justify-center">
       <div class="wayt-logo" ></div>
     </q-header>
 
@@ -23,13 +23,63 @@ export default {
 
 <style lang="scss" scoped>
 .q-header, .q-footer{
-  background: $linear-hidding;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background:none;
+
+  &::before{
+    content: ' ';
+    position: absolute;
+    z-index:-1;
+    left:0;
+    width:100%;
+    height:40%;
+
+    background: url('../assets/blur.png');
+
+    @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
+        background: none;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+  }
+  
+  &::after{
+    content: ' ';
+    position: absolute;
+    z-index:-1;
+    left:0;
+    width:100%;
+
+    background: $linear-hidding, $linear-hidding;
+  }
+}
+
+.q-header{
+  &::before{
+    top:0;
+  }
+
+  &::after{
+    top:0;
+    height:100%;
+    transform: rotate(180deg);
+  }
 }
 
 .q-footer{
-  height:16vh;
+  height:$footerHeight;
+
+  &::before{
+    top:60%;
+  }
+
+  &::after{
+    top:0;
+    height:100%;
+  }
+
+  button{
+    transform: translateY(20px);
+  }
 
   /* & .q-btn{
     display:block;
