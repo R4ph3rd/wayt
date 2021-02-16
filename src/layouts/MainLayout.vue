@@ -40,4 +40,8 @@ export default {
   padding-left:15px;
   padding-right:15px;
 }
+
+.q-page-container{
+  padding-bottom:0 !important;
+}
 </style>

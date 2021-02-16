@@ -20,11 +20,6 @@ export default {
 
 <style lang="scss" scoped>
 .dashboard{
-
-    .slider{
-      transform: translateX(-15px);
-    }
-
     .timeline{
       $snapshotSize:27vw;
       margin-left:calc(50% - (#{$snapshotSize} /2));  

@@ -1,6 +1,6 @@
 <template>
     <li>
-        <img src="" alt="record snapshot">
+        <img :src="imgSource" alt="record snapshot">
         <div>
             <p>{{title}}</p>
             <p>{{timestamp}}</p>
@@ -17,6 +17,7 @@ export default {
         imgSource: {
             type: String,
             required: false,
+            default: () => 'records/theo_le_bg.png'
         },
         title: {
             type: String,
@@ -46,8 +47,12 @@ export default {
         }
 
         img{
+            object-fit: cover;
+            width:100%;
+            height:100%;
+
             border: 4px solid #EBEBEB50;
-            border-radius: 8px;
+            border-radius: 21px;
             background:#F7F7F7;
         }
 
