@@ -11,17 +11,16 @@
 
         <span class="spaceY"></span>
 
-            <q-dialog
+        <q-dialog
             v-model="dialog"
             persistent
-            :maximized="maximizedToggle"
+            maximized
             transition-show="slide-up"
             transition-hide="slide-down"
             >
             <q-card class="bg-primary text-white flex content-end">
 
-                <q-btn class="fixed-top-right closebtn" round color="grey" icon="close" v-close-popup>
-                </q-btn>
+                <q-btn class="fixed-top-right closebtn" round color="grey" icon="close" v-close-popup></q-btn>
 
                 <q-card-section>
                     <div class="text-h5">{{currentRecord.title}}</div>
@@ -30,7 +29,7 @@
                     <q-btn dense flat icon="more_vert" size="lg" class="primary-shadow"></q-btn>
                 </q-card-section>
             </q-card>
-            </q-dialog>
+        </q-dialog>
     </ul>
 </template>
 
@@ -45,7 +44,6 @@ export default {
     data(){
         return {
             dialog: false,
-            maximizedToggle: true,
             currentRecord: {},
             cards: [
                 {
