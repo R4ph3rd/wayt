@@ -22,6 +22,9 @@
     "plugins": {
       "cordova-plugin-whitelist": {},
       "cordova-plugin-ionic-webview": {}
-    }
+    },
+    "platforms": [
+      "ios"
+    ]
   }
 }
